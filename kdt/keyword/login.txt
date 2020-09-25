@@ -1,0 +1,15 @@
+# 首页
+open,http://localhost:8080/WoniuSales1.3,chrome
+wait,3
+check exist,xpath=//span[text()="你还没有登录，请先登录。"]
+# 登录
+input,id=username,admin
+input,id=password,admin123
+input,id=verifycode,0000
+click,xpath=(//button[@type='button'])[5]
+wait,5
+check exist,link=注销
+# 扫码
+input,id=barcode,6955203655479
+click,xpath=(//button[@type='button'])[5]
+check value,id=tempbuyprice,118
