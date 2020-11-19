@@ -1,5 +1,5 @@
 # 首页
-open,http://localhost:8080/WoniuSales1.3,chrome
+open,http://localhost:8080,chrome
 wait,3
 check exist,xpath=//span[text()="你还没有登录，请先登录。"]
 # 登录
